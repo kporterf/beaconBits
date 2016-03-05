@@ -1,4 +1,6 @@
-//Connect to database
+var exec = require("child_process").exec
+
+/*//Connect to database
 var mysql      = require('mysql');
 var sys = require('sys') 
 var exec = require('child_process').exec;
@@ -21,7 +23,7 @@ connection.connect();
   //else
     //console.log('Error while performing Query.');
 //});
-
+*/
 //stuff for pings
 function puts(error, stdout, stderr) {
 	var end = Date.now() - start;
@@ -31,7 +33,7 @@ function puts(error, stdout, stderr) {
 var start = Date.now();
 exec("ping -c 3 google.com", puts);
 
-var url = 'https://www.google.com';
+/*var url = 'https://www.google.com';
 
 var start2 = Date.now();
 request(url, function (error, response, body) {
@@ -43,4 +45,4 @@ var end2 = Date.now() - start2;
 console.log("downloaded: ", (end2/1000));
 
 //Close connection
-connection.end(); 
+connection.end(); */
