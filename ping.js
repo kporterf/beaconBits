@@ -1,29 +1,5 @@
 var exec = require("child_process").exec
 
-/*//Connect to database
-var mysql      = require('mysql');
-var sys = require('sys') 
-var exec = require('child_process').exec;
-var request = require('request');
-
-var connection = mysql.createConnection({
-  host     : 'localhost',
-  user     : '< MySQL username >',
-  password : '< MySQL password >',
-  database : '<your database name>'
-});
-
-//Open connection
-connection.connect();
-
-//Sample query
-//connection.query('SELECT * from < table name >', function(err, rows, fields) {
-  //if (!err)
-    //console.log('The solution is: ', rows);
-  //else
-    //console.log('Error while performing Query.');
-//});
-*/
 //stuff for pings
 function puts(error, stdout, stderr) {
 	var end = Date.now() - start;
